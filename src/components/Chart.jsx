@@ -2,6 +2,7 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { useFetchAddDelActivityQuery } from "../store";
 const Chart = ({ repoData }) => {
+	// eslint-disable-next-line
 	const { data, error, isLoading } = useFetchAddDelActivityQuery({
 		owner: repoData.owner.login,
 		repo: repoData.name,

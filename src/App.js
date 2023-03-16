@@ -4,11 +4,12 @@ import { useFetchRepoQuery } from "./store";
 
 function App() {
 	const [expanded, setExpanded] = useState(false);
+	// eslint-disable-next-line
 	const [page, setPage] = useState(1);
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
 	};
-
+	// eslint-disable-next-line
 	const { data, error, isLoading } = useFetchRepoQuery(page);
 
 	return (
